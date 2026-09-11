@@ -1,5 +1,5 @@
-site_name: Публикация результатов эксперимента
-site_description: Воспроизводимый исследовательский сайт на MkDocs Material
+site_name: TeleBid — НИР-2
+site_description: Исследование синхронизации веб-клиентов в аукционных платформах
 site_url: https://iskandario.github.io/pyweb-ssg-project/
 use_directory_urls: true
 theme:
@@ -32,6 +32,7 @@ extra_css:
   - assets/extra.css
 nav:
   - Главная: index.md
-  - Эксперимент: experiment.md
+  - Постановка эксперимента: methodology.md
+  - Результаты: results.md
   - Сравнение SSG: comparison.md
   - Отчёт: report.md

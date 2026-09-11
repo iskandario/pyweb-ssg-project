@@ -1,14 +1,10 @@
-.PHONY: prepare build serve clean
+.PHONY: build serve clean
 
-prepare:
-	python scripts/run_experiment.py
-
-build: prepare
+build:
 	mkdocs build --strict
 
-serve: prepare
+serve:
 	mkdocs serve
 
 clean:
-	rm -rf site docs/generated
-
+	rm -rf site

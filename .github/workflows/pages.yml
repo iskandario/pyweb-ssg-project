@@ -25,7 +25,6 @@ jobs:
           python-version: '3.12.7'
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python scripts/run_experiment.py
       - run: mkdocs build --strict
 
   build:

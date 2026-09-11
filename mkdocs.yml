@@ -1,0 +1,37 @@
+site_name: Публикация результатов эксперимента
+site_description: Воспроизводимый исследовательский сайт на MkDocs Material
+site_url: https://iskandario.github.io/pyweb-ssg-project/
+use_directory_urls: true
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - content.code.copy
+  custom_dir: overrides
+plugins:
+  - search:
+      lang: ru
+  - bibtex:
+      bib_file: docs/references.bib
+  - glightbox
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.snippets
+extra_javascript:
+  - assets/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - assets/extra.css
+nav:
+  - Главная: index.md
+  - Эксперимент: experiment.md
+  - Сравнение SSG: comparison.md
+  - Отчёт: report.md
